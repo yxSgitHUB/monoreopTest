@@ -1,0 +1,19 @@
+{
+  "name": "monorepotest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-loader": "^8.2.2",
+    "babel-plugin-named-asset-import": "^0.3.7"
+  }
+}
