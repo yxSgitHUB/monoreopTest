@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "chai": "^4.2.0",
-    "mocha": "^6.1.4"
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "mocha": "^8.3.0",
+    "react": "^17.0.1"
   },
   "scripts": {
-    "test": "node ../../node_modules/mocha/bin/mocha --require babel-core/register ./test/app.test"
+    "test": "mocha --require babel-core/register ./test/react.test"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

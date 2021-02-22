@@ -15,5 +15,8 @@
   "dependencies": {
     "babel-loader": "^8.2.2",
     "babel-plugin-named-asset-import": "^0.3.7"
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0"
   }
 }
