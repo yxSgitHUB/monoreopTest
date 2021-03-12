@@ -18,19 +18,19 @@ class Index extends React.Component {
                 e.stopPropagation();
             }
             console.log("child:dom scroll")
-        })
+        },true)
         parentDom.addEventListener('scroll', (e) => {
             if (this.state.stopDomBubbling) {
                 e.stopPropagation();
             }
             console.log("parent:dom scroll")
-        })
+        },true)
         containerDom.addEventListener('scroll', (e) => {
             if (this.state.stopDomBubbling) {
                 e.stopPropagation();
             }
             console.log("container:dom scroll")
-        })
+        },true)
     }
 
     render() {
@@ -55,24 +55,24 @@ class Index extends React.Component {
             <br/>
             <br/>
             <div id={'container'} onScroll={(e) => {
-                if (this.state.stopReactBubbling) {
-                    e.stopPropagation();
-                }
-                console.log("container:react scroll")
+                // if (this.state.stopReactBubbling) {
+                //     e.stopPropagation();
+                // }
+                // console.log("container:react scroll")
             }}>
                 <span>container</span>
                 <div id={'parent'} onScroll={(e) => {
-                    if (this.state.stopReactBubbling) {
-                        e.stopPropagation();
-                    }
-                    console.log("parent:react scroll")
+                    // if (this.state.stopReactBubbling) {
+                    //     e.stopPropagation();
+                    // }
+                    // console.log("parent:react scroll")
                 }}>
                     <span>parent</span>
                     <div id='child' onScroll={(e) => {
-                        if (this.state.stopReactBubbling) {
-                            e.stopPropagation();
-                        }
-                        console.log("child:react scroll")
+                        // if (this.state.stopReactBubbling) {
+                        //     e.stopPropagation();
+                        // }
+                        // console.log("child:react scroll")
                     }}>
                         <span>child</span>
                     </div>

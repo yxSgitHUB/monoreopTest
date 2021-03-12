@@ -19,12 +19,6 @@ class Index extends React.Component {
             }
             console.log("child:dom click")
         })
-        childDom.addEventListener('click', (e) => {
-            if (this.state.stopDomBubbling) {
-                e.stopPropagation();
-            }
-            console.log("child:dom click2")
-        })
         parentDom.addEventListener('click', (e) => {
             if (this.state.stopDomBubbling) {
                 e.stopPropagation();

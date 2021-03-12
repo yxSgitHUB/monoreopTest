@@ -3,10 +3,11 @@
   height: 600px;
   text-align: right;
   background: yellow;
+  overflow-y:auto
 }
 #parent{
   width:400px;
-  height:300px;
+  height:700px;
   background:orange;
   overflow-y:auto
 }

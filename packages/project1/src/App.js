@@ -10,7 +10,7 @@ class App extends React.Component {
   }
 
   render () {
-    return false?<Scroll/>:<Click/>
+    return true?<Scroll/>:<Click/>
   }
 }
 
